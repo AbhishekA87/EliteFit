@@ -1,157 +1,146 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EliteFit Investor Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EliteFit – Society Gym Management</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #222;
+      font-family: 'Inter', sans-serif;
+      color: #333;
+      background-color: #fff;
     }
-    header {
-      background: #111;
+    header, footer {
+      background-color: #000;
       color: #fff;
-      padding: 1.5rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    header img {
-      height: 40px;
-    }
-    .container {
       padding: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
+      text-align: center;
     }
-    h1, h2, h3 {
-      color: #111;
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: #f7f7f7;
     }
-    .section {
-      margin-bottom: 3rem;
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      background: #e63946;
+      color: #fff;
+      border: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #e63946;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
     }
     .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       padding: 1.5rem;
-      transition: transform 0.2s;
+      background: #f1f1f1;
+      border-radius: 8px;
     }
-    .card:hover {
-      transform: translateY(-5px);
+    footer p {
+      margin: 0.5rem 0;
     }
-    .flex {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #333;
-    }
-    nav {
-      background: #222;
-      padding: 1rem;
-      color: white;
-      text-align: center;
-    }
-    nav a {
-      color: #ccc;
-      text-decoration: none;
-      margin: 0 1rem;
-    }
-    nav a:hover {
+    .contact {
+      background-color: #e63946;
       color: #fff;
-    }
-    footer {
       text-align: center;
-      padding: 2rem 1rem;
-      background: #111;
-      color: #bbb;
+      padding: 3rem 1rem;
+    }
+    .contact h2 {
+      color: #fff;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="elitefit-logo.png" alt="EliteFit Logo">
-    <h1>EliteFit</h1>
-  </header>
-  <nav>
-    <a href="#models">Models</a>
-    <a href="#sessions">Session Types</a>
-    <a href="#benefits">Benefits</a>
-    <a href="#contact">Contact</a>
-  </nav>
 
-  <div class="container">
-    <section class="section" id="overview">
-      <h2>Overview</h2>
-      <p>EliteFit is a premium fitness network designed for upscale residential societies. Our goal is to create a consistent, branded gym experience inside residential buildings—similar to Airbnb/OYO’s standardization model.</p>
-    </section>
+<header>
+  <h1>EliteFit</h1>
+  <p>Private Gyms. Managed to Perfection.</p>
+</header>
 
-    <section class="section" id="models">
-      <h2>Membership Models</h2>
-      <div class="flex">
-        <div class="card">
-          <h3>Monthly Subscription</h3>
-          <p>Flat monthly rate for unlimited access to the society gym and group sessions.</p>
-        </div>
-        <div class="card">
-          <h3>Annual Upfront Plan</h3>
-          <p>One-time payment with long-term benefits, VIP features, and fitness goodies.</p>
-        </div>
-        <div class="card">
-          <h3>Pay Per Session</h3>
-          <p>No strings attached. Residents can pay for each class or PT session as they go.</p>
-        </div>
-      </div>
-    </section>
+<div class="hero">
+  <h1>Transform Your Society Gym into a Wellness Club</h1>
+  <p>EliteFit manages your existing gym, offers holistic fitness programs, and drives resident engagement — at no cost to your society.</p>
+  <button class="btn" onclick="location.href='mailto:partnerships@elitefit.in'">Partner With Us</button>
+</div>
 
-    <section class="section" id="sessions">
-      <h2>Session Types</h2>
-      <div class="flex">
-        <div class="card">
-          <h3>Group Classes</h3>
-          <p>From yoga to HIIT, we offer diverse weekly classes for the community.</p>
-        </div>
-        <div class="card">
-          <h3>Personal Training</h3>
-          <p>1-on-1 attention for residents who want personalized workout plans.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="benefits">
-      <h2>Key Benefits</h2>
-      <div class="flex">
-        <div class="card">
-          <h3>For Residents</h3>
-          <p>Access to a premium gym just steps away, flexible plans, and exclusive sessions.</p>
-        </div>
-        <div class="card">
-          <h3>For Societies</h3>
-          <p>Increased property value, shared revenue model, branded fitness reputation.</p>
-        </div>
-        <div class="card">
-          <h3>For Investors</h3>
-          <p>Scalable, asset-light operations, recurring revenue, and high retention potential.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <h2>Get In Touch</h2>
-      <p>Email us at <strong>partnerships@elitefit.club</strong> to explore pilot or investment opportunities.</p>
-    </section>
+<section>
+  <h2>Why Partner with EliteFit?</h2>
+  <div class="grid">
+    <div class="card">✅ No setup cost for the society</div>
+    <div class="card">✅ Monthly revenue share</div>
+    <div class="card">✅ Certified trainers & risk-free operations</div>
+    <div class="card">✅ Increased resident satisfaction</div>
+    <div class="card">✅ Co-branded signage & launch campaign</div>
+    <div class="card">✅ Real-time usage and wellness reports</div>
   </div>
+</section>
 
-  <footer>
-    &copy; 2025 EliteFit. Designed for future-ready fitness communities.
-  </footer>
+<section>
+  <h2>What We Offer</h2>
+  <div class="grid">
+    <div class="card">🏋️ Personal & Group Training</div>
+    <div class="card">🧘 Yoga, Zumba & Kids Fitness</div>
+    <div class="card">🧑‍⚕️ Wellness Assessments & Rehab</div>
+    <div class="card">🏠 In-home VIP Coaching (Optional)</div>
+    <div class="card">📅 Year-round wellness calendar</div>
+    <div class="card">📲 Optional microsite for bookings</div>
+  </div>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <ol>
+    <li><strong>Step 1:</strong> MOU signed with RWA/MC</li>
+    <li><strong>Step 2:</strong> Gym audit, trainer deployed</li>
+    <li><strong>Step 3:</strong> Free class week & launch campaign</li>
+    <li><strong>Step 4:</strong> Ongoing operations, reports & revenue share</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Resident Impact Snapshot</h2>
+  <ul>
+    <li>📈 Gym usage up to 65% in 3 months</li>
+    <li>👥 Avg. 120+ residents/month engage in classes</li>
+    <li>🏡 Increased tenant retention & society wellness</li>
+    <li>🧑‍⚕️ Reduced health risks & absenteeism</li>
+  </ul>
+</section>
+
+<section class="contact">
+  <h2>Let’s Build a Healthier Community</h2>
+  <p>📧 partnerships@elitefit.in</p>
+  <p>📞 +91-98765-43210</p>
+  <p>🌐 www.elitefit.in</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 EliteFit. All rights reserved.</p>
+  <p>Powered by Wellness. Backed by Results.</p>
+</footer>
+
 </body>
 </html>
